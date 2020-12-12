@@ -1,3 +1,5 @@
+import java.util.stream.IntStream;
+import java.util.Arrays;
 public class Stack
 {
     //variables
@@ -9,16 +11,29 @@ public class Stack
         stack= new int[5];
         size=0;
     }
-    
+
+    /*adds value to array*/
     public void push(int num)
     {
         stack[size]=num;
         size++;
     }
+    /*Removes value from array*/
+    public void pop()
+    {
+        int[] newStack = new int[size-1];
+        System.out.println("\tpop:"+stack[0]);
+        for(int i=1;i<stack.length;i++)
+        {
+            newStack[i-1]=stack[i];
+        }
+        stack=newStack;
+    }
 
+    /*Outputs array*/
     public String getStack()
     {
-        String array = "";
+        String array = "List:";
         for (int n: stack)
         {
             array+=n+", ";
