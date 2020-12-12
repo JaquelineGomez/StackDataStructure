@@ -14,5 +14,7 @@ public class StackDataStructureDriver
 
         System.out.println(test.getStack());
         System.out.println("The element at the beginning of the stack: "+ test.peek());
+        System.out.println("Position of 25:\t"+test.search(25));
+        System.out.println("Position of 13: "+test.search(13));
     }//end main method
 }//end class StackDataStructureDriver
