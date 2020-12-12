@@ -65,6 +65,12 @@ public class Stack
         return position;
     }
 
+    /*checks if stack if empty*/
+    public boolean empty()
+    {
+        return size==0;
+    }
+
     /*Outputs array*/
     public String getStack()
     {
