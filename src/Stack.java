@@ -18,6 +18,7 @@ public class Stack
         stack[size]=num;
         size++;
     }
+
     /*Removes value from array*/
     public void pop()
     {
@@ -28,6 +29,12 @@ public class Stack
             newStack[i-1]=stack[i];
         }
         stack=newStack;
+    }
+
+    /*Shows the first element*/
+    public int peek()
+    {
+       return stack[0];
     }
 
     /*Outputs array*/
