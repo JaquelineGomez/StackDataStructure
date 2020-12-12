@@ -14,6 +14,15 @@ public class Stack
     /*adds value to array*/
     public void push(int num)
     {
+        if(size==stack.length)
+        {
+            int[] newStack= new int[size+1];
+            for (int i=0; (i<size);i++)
+            {
+                newStack[i]=stack[i];
+            }
+            stack=newStack;
+        }
         stack[size]=num;
         size++;
     }

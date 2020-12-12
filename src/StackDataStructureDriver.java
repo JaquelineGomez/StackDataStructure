@@ -7,6 +7,7 @@ public class StackDataStructureDriver
         test.push(25);
         test.push(1);
         test.compress();
+        test.push(34);
 
         System.out.println(test.getStack());
         test.pop();
